@@ -719,9 +719,6 @@ In our experiments, we validate our theoretical analysis with real-world data. W
 
 
 
-\newpage
-
-
 
 % citation
 
@@ -758,6 +755,40 @@ In our experiments, we validate our theoretical analysis with real-world data. W
 
 
 \section{Appendix}
+
+\subsection{The relationship between $Y_{ijk}$ and $A_{ijk}$}
+Given $Y_{ijk} = (1,1)$
+\begin{equation}
+\begin{aligned}
+    & Pr[A_{ijk} = (1,1) ~|~ Y_{ijk} = (1,1)] = p_i^2 \\ 
+    & Pr[A_{ijk} = (1,0) ~|~ Y_{ijk} = (1,1)] = p_i(1-p_i) \\
+    & Pr[A_{ijk} = (0,1) ~|~ Y_{ijk} = (1,1)] = p_i(1-p_i) \\
+    & Pr[A_{ijk} = (0,0) ~|~ Y_{ijk} = (1,1)] = (1-p_i)^2 \nonumber
+\end{aligned}
+\end{equation}
+Given $Y_{ijk} = (1,0)$
+\begin{equation}
+\begin{aligned}
+    & Pr[A_{ijk} = (1,0) ~|~ Y_{ijk} = (1,0)] = p_i \\ 
+    & Pr[A_{ijk} = (0,0) ~|~ Y_{ijk} = (1,0)] = 1-p_i \\
+ \nonumber
+\end{aligned}
+\end{equation}
+Given $Y_{ijk} = (0,1)$
+\begin{equation}
+\begin{aligned}
+    & Pr[A_{ijk} = (0,1) ~|~ Y_{ijk} = (0,1)] = p_i \\ 
+    & Pr[A_{ijk} = (0,0) ~|~ Y_{ijk} = (0,1)] = 1-p_i \\
+ \nonumber
+\end{aligned}
+\end{equation}
+Given $Y_{ijk} = (0,0)$
+\begin{equation}
+\begin{aligned}
+    & Pr[A_{ijk} = (0,0) ~|~ Y_{ijk} = (0,0)] = 1 \\ 
+ \nonumber
+\end{aligned}
+\end{equation}
 
 \subsection{Proof of Theorem 1}
 
